@@ -242,7 +242,7 @@ module.exports = {
                 snd.removeEventListener("ended", onEvent);
                 snd = null;
                 if (winX) {
-                    winX(); // notification.js just sends null, but this is future friendly
+                    winX(); // notification.src just sends null, but this is future friendly
                 }
             }
             count--;

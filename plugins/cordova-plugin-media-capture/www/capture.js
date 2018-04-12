@@ -60,7 +60,7 @@ function Capture() {
 }
 
 /**
- * Launch audio recorder application for recording audio clip(s).
+ * Launch audio recorder framework for recording audio clip(s).
  *
  * @param {Function} successCB
  * @param {Function} errorCB
@@ -71,7 +71,7 @@ Capture.prototype.captureAudio = function(successCallback, errorCallback, option
 };
 
 /**
- * Launch camera application for taking image(s).
+ * Launch camera framework for taking image(s).
  *
  * @param {Function} successCB
  * @param {Function} errorCB
@@ -82,7 +82,7 @@ Capture.prototype.captureImage = function(successCallback, errorCallback, option
 };
 
 /**
- * Launch device camera application for recording video(s).
+ * Launch device camera framework for recording video(s).
  *
  * @param {Function} successCB
  * @param {Function} errorCB

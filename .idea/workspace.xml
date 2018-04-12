@@ -2,14 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6281a67d-38bc-4c40-b6d8-688685f856c3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/angular-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/config/routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/config/scripts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/config/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/framework/Application.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/framework/Controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/framework/initializer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/handlebars/handlebars-v4.0.11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/jquery/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/fonts/roboto/Roboto-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/icons/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/init.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/libs/materialize/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/src/DietManagerApplication.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/src/index/IndexController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/src/login/LoginController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/helper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/MIT.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/spec/lib/jasmine-1.2.0/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/lib/jasmine-1.2.0/MIT.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/lib/jasmine-1.2.0/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/lib/jasmine-1.2.0/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/browser/www/spec/lib/jasmine-1.2.0/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/android/android.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/android/android.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/ios/ios.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/ios/ios.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.m" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/Camera.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/Camera.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/src/blackberry10/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/src/blackberry10/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/windows/DeviceProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/src/windows/DeviceProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file-transfer/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file-transfer/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/doc/de/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/doc/de/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/doc/de/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/doc/de/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/src/browser/FileProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/src/browser/FileProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/src/osx/CDVFile.m" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/src/osx/CDVFile.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/tests/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/tests/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/browser/Preparing.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/browser/Preparing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/fileSystemPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/fileSystemPaths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/requestFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/requestFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/ios/CDVLocation.m" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/src/ios/CDVLocation.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/src/firefoxos/GlobalizationProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/src/firefoxos/GlobalizationProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/browser/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/browser/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/firefoxos/l10n.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/firefoxos/l10n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/firefoxos/l10n_date.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/firefoxos/l10n_date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/src/blackberry10/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/src/blackberry10/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/src/windows/CaptureProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/src/windows/CaptureProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureError.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/capture.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/capture.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/network.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/network.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/config/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/config/meta.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/view/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/view/login/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,68 +93,171 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state relative-caret-position="360">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <file leaf-file-name="Controller.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/libs/framework/Controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/config/meta.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Application.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/libs/framework/Application.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initializer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/libs/framework/initializer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/login/login.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="DietManagerApplication.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/src/DietManagerApplication.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/view/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="LoginController.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/src/login/LoginController.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/view/login/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.xml">
+      <file leaf-file-name="IndexController.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/src/index/IndexController.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>location</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/libs/materialize/init.css" />
+        <option value="$PROJECT_DIR$/www/libs/jquery/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/www/js/navigation/Navigation.js" />
+        <option value="$PROJECT_DIR$/www/js/login/LoginController.js" />
+        <option value="$PROJECT_DIR$/www/js/application/AppController.ts" />
+        <option value="$PROJECT_DIR$/www/config/routing.json" />
+        <option value="$PROJECT_DIR$/www/js/navigation/Navigation.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/www/js/application/Initializer.js" />
+        <option value="$PROJECT_DIR$/www/js/application/init.js" />
+        <option value="$PROJECT_DIR$/www/js/application/anit.js" />
+        <option value="$PROJECT_DIR$/www/libs/requirejs/require.js" />
+        <option value="$PROJECT_DIR$/www/js/tsconfig.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/www/js/application/Initializer.ts" />
+        <option value="$PROJECT_DIR$/www/js/application/webpack.config.js" />
+        <option value="$PROJECT_DIR$/www/js/config/Navigation.ts" />
+        <option value="$PROJECT_DIR$/www/js/application/Page.ts" />
+        <option value="$PROJECT_DIR$/www/js/application/Controller.ts" />
+        <option value="$PROJECT_DIR$/www/js/config/Router.ts" />
+        <option value="$PROJECT_DIR$/www/js/login/LoginController.ts" />
+        <option value="$PROJECT_DIR$/www/js/config/styles.ts" />
+        <option value="$PROJECT_DIR$/www/js/config/routing.ts" />
+        <option value="$PROJECT_DIR$/www/js/application/initializer.ts" />
+        <option value="$PROJECT_DIR$/www/js/application/Application.ts" />
+        <option value="$PROJECT_DIR$/platforms/browser/www/config/routing.ts" />
+        <option value="$PROJECT_DIR$/www/libs/framework/Application.ts" />
+        <option value="$PROJECT_DIR$/www/config/app.ts" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/www/src/DietManagerApplication.ts" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/libs/framework/Controller.ts" />
+        <option value="$PROJECT_DIR$/www/view/index/IndexController.ts" />
+        <option value="$PROJECT_DIR$/www/config/routing.ts" />
+        <option value="$PROJECT_DIR$/www/src/login/LoginController.ts" />
+        <option value="$PROJECT_DIR$/www/libs/framework/initializer.ts" />
+        <option value="$PROJECT_DIR$/www/src/index/IndexController.ts" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/view/login/login.html" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -91,10 +265,14 @@
   <component name="NamedScopeManager">
     <scope name="PhoneGap" pattern="file[DietManager-app]:www//*||file:config.xml" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1114" />
-    <option name="height" value="886" />
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
+    <option name="y" value="87" />
+    <option name="width" value="1680" />
+    <option name="height" value="963" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -104,22 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="PhoneGap">
           <expand>
@@ -136,7 +298,13 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="DietManager-app" type="cbb8eebc:String" user="DietManager-app" />
               <item name="www" type="cbb8eebc:String" user="www" />
-              <item name="css" type="cbb8eebc:String" user="css" />
+              <item name="libs" type="cbb8eebc:String" user="libs" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="DietManager-app" type="cbb8eebc:String" user="DietManager-app" />
+              <item name="www" type="cbb8eebc:String" user="www" />
+              <item name="view" type="cbb8eebc:String" user="view" />
             </path>
           </expand>
           <select />
@@ -156,6 +324,34 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DietManager-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DietManager-app" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,6 +360,22 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/libs/handlebars" />
+      <recent name="$PROJECT_DIR$/www/libs/materialize/icons" />
+      <recent name="$PROJECT_DIR$/libs/materialize" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/www/libs" />
+      <recent name="$PROJECT_DIR$/www/config" />
+      <recent name="$PROJECT_DIR$/www/js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -188,113 +400,363 @@
       <option name="presentableId" value="Default" />
       <updated>1522617939146</updated>
       <workItem from="1522617941893" duration="88000" />
-      <workItem from="1522619059839" duration="1305000" />
+      <workItem from="1522619059839" duration="3915000" />
+      <workItem from="1522656811005" duration="4025000" />
+      <workItem from="1523457304055" duration="4729000" />
+      <workItem from="1523520597125" duration="3046000" />
+      <workItem from="1523526978094" duration="7715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1393000" />
+    <option name="totallyTimeSpent" value="23518000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1114" height="886" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="963" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32405746" />
+      <window_info anchor="bottom" id="TypeScript" order="7" sideWeight="0.48884872" weight="0.19882353" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49857953" visible="true" weight="0.21518987" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43037975" side_tool="true" visible="true" weight="0.23058824" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4954792" weight="0.3282353" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" sideWeight="0.50142044" side_tool="true" weight="0.21699819" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.56962025" visible="true" weight="0.23058824" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/www/libs/framework/Application.js" />
+        <option value="$PROJECT_DIR$/www/libs/framework/Application.js.map" />
+        <option value="$PROJECT_DIR$/www/config/app.js.map" />
+        <option value="$PROJECT_DIR$/www/config/app.js" />
+        <option value="$PROJECT_DIR$/www/src/login/LoginController.js.map" />
+        <option value="$PROJECT_DIR$/www/src/login/LoginController.js" />
+        <option value="$PROJECT_DIR$/www/src/DietManagerApplication.js" />
+        <option value="$PROJECT_DIR$/www/src/DietManagerApplication.js.map" />
+        <option value="$PROJECT_DIR$/www/src/index/IndexController.js.map" />
+        <option value="$PROJECT_DIR$/www/src/index/IndexController.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/spec/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/login/login.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/view/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/spec/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/spec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/view/login/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/res/screen/android/drawable-port-xhdpi-screen.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/res/icon/android/drawable-hdpi-icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/spec/helper.js" />
+    <entry file="file://$PROJECT_DIR$/www/spec/index.js" />
+    <entry file="file://$PROJECT_DIR$/www/spec.html" />
+    <entry file="file://$PROJECT_DIR$/www/libs/materialize/init.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/jquery/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="86841" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/materialize/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17475">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/handlebars/handlebars-v4.0.11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/materialize/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7225">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/browser/www/js/navigation/Navigation.ts" />
+    <entry file="file://$PROJECT_DIR$/www/js/navigation/Navigation.ts" />
+    <entry file="file://$PROJECT_DIR$/platforms/browser/www/js/login/LoginController.ts" />
+    <entry file="file://$PROJECT_DIR$/platforms/browser/www/js/application/Application.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/framework/initializer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/application/anit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/www/scripts/Application.js" />
+    <entry file="file://$PROJECT_DIR$/www/js/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/requirejs/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dist/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="589">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/routing.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/application/Page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/src/DietManagerApplication.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/browser/www/config/routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/initializer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="19387" column="12" selection-start-line="19387" selection-start-column="12" selection-end-line="19387" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/scripts.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/styles.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/app.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/config/meta.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/view/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dist/application.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="53" selection-start-column="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/initializer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/Controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/libs/framework/Application.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/src/DietManagerApplication.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/src/login/LoginController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/src/index/IndexController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/view/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>

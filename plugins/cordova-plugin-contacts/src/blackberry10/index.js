@@ -87,7 +87,7 @@ function populateSearchFields(fields) {
 }
 
 function convertBirthday(birthday) {
-    //Convert date string from native to milliseconds since epoch for cordova-js
+    //Convert date string from native to milliseconds since epoch for cordova-src
     var birthdayInfo;
     if (birthday) {
         birthdayInfo = birthday.split("-");

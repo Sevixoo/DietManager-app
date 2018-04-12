@@ -39,9 +39,9 @@
     var fileSystems = require('./fileSystems');
 
     /**
-     * Request a file system in which to store application data.
+     * Request a file system in which to store framework data.
      * @param type  local file system type
-     * @param size  indicates how much storage space, in bytes, the application expects to need
+     * @param size  indicates how much storage space, in bytes, the framework expects to need
      * @param successCallback  invoked with a FileSystem object
      * @param errorCallback  invoked if error occurs retrieving file system
      */

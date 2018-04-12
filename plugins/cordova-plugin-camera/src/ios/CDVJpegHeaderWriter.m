@@ -150,7 +150,7 @@ const uint mTiffLength = 0x2a; // after byte align bits, next to bits are 0x002a
 
 /**
  * Create the Exif data block as a hex string
- *   jpeg uses Application Markers (APP's) as markers for application data
+ *   jpeg uses DietManagerApplication Markers (APP's) as markers for application data
  *   APP1 is the application marker reserved for exif data
  *
  *   (NSDictionary*) datadict - with subdictionaries marked '{TIFF}' and '{EXIF}' as returned by imagePickerController with a valid

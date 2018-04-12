@@ -94,7 +94,7 @@ exports.defineAutoTests = function () {
                     return {
                         compare: function (url) {
                             var pass = false;
-                            // "data:application/octet-stream;base64,"
+                            // "data:framework/octet-stream;base64,"
                             var header = url.substr(0, url.indexOf(','));
                             var headerParts = header.split(/[:;]/);
                             if (headerParts.length === 3 &&
@@ -118,11 +118,11 @@ exports.defineAutoTests = function () {
             };
             window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) { // eslint-disable-line no-undef
                 root = fileSystem.root;
-                // set in file.tests.js
+                // set in file.tests.src
                 persistent_root = root;
                 window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function (fileSystem) { // eslint-disable-line no-undef
                     temp_root = fileSystem.root;
-                    // set in file.tests.js
+                    // set in file.tests.src
                     done();
                 }, onError);
             }, onError);
@@ -2509,8 +2509,8 @@ exports.defineAutoTests = function () {
                 runReaderTest('readAsDataURL', true, done, null, function (evt, fileData, fileDataAsBinaryString) {
                     /* `readAsDataURL` function is supported, but the mediatype in Chrome depends on entry name extension,
                         mediatype in IE is always empty (which is the same as `text-plain` according the specification),
-                        the mediatype in Firefox is always `application/octet-stream`.
-                        For example, if the content is `abcdefg` then Firefox returns `data:application/octet-stream;base64,YWJjZGVmZw==`,
+                        the mediatype in Firefox is always `framework/octet-stream`.
+                        For example, if the content is `abcdefg` then Firefox returns `data:framework/octet-stream;base64,YWJjZGVmZw==`,
                         IE returns `data:;base64,YWJjZGVmZw==`, Chrome returns `data:<mediatype depending on extension of entry name>;base64,YWJjZGVmZw==`. */
                     expect(evt.target.result).toBeDataUrl();
 
@@ -2574,8 +2574,8 @@ exports.defineAutoTests = function () {
                 runReaderTest('readAsDataURL', true, done, null, function (evt, fileData, fileDataAsBinaryString) {
                     /* `readAsDataURL` function is supported, but the mediatype in Chrome depends on entry name extension,
                         mediatype in IE is always empty (which is the same as `text-plain` according the specification),
-                        the mediatype in Firefox is always `application/octet-stream`.
-                        For example, if the content is `abcdefg` then Firefox returns `data:application/octet-stream;base64,YWJjZGVmZw==`,
+                        the mediatype in Firefox is always `framework/octet-stream`.
+                        For example, if the content is `abcdefg` then Firefox returns `data:framework/octet-stream;base64,YWJjZGVmZw==`,
                         IE returns `data:;base64,YWJjZGVmZw==`, Chrome returns `data:<mediatype depending on extension of entry name>;base64,YWJjZGVmZw==`. */
                     expect(evt.target.result).toBeDataUrl();
 
@@ -3015,14 +3015,14 @@ exports.defineAutoTests = function () {
                 try {
                     // Mobile Safari: Use Blob constructor
                     blob = new Blob([data], { // eslint-disable-line no-undef
-                        'type': 'application/octet-stream'
+                        'type': 'framework/octet-stream'
                     });
                 } catch (e) {
                     if (window.WebKitBlobBuilder) {
                         // Android Browser: Use deprecated BlobBuilder
                         var builder = new WebKitBlobBuilder();
                         builder.append(data);
-                        blob = builder.getBlob('application/octet-stream');
+                        blob = builder.getBlob('framework/octet-stream');
                     } else {
                         // We have no way defined to create a Blob, so fail
                         fail();
@@ -3179,14 +3179,14 @@ exports.defineAutoTests = function () {
                 try {
                     // Mobile Safari: Use Blob constructor
                     blob = new Blob([data], { // eslint-disable-line no-undef
-                        'type': 'application/octet-stream'
+                        'type': 'framework/octet-stream'
                     });
                 } catch (e) {
                     if (window.WebKitBlobBuilder) {
                         // Android Browser: Use deprecated BlobBuilder
                         var builder = new WebKitBlobBuilder();
                         builder.append(data);
-                        blob = builder.getBlob('application/octet-stream');
+                        blob = builder.getBlob('framework/octet-stream');
                     } else {
                         // We have no way defined to create a Blob, so fail
                         fail();
@@ -3236,7 +3236,7 @@ exports.defineAutoTests = function () {
         // Backwards Compatibility
         describe('Parent References', function () {
             /* These specs verify that paths with parent references i("..") in them
-             * work correctly, and do not cause the application to crash.
+             * work correctly, and do not cause the framework to crash.
              */
             it('file.spec.110 should not throw exception resolving parent refefences', function (done) {
                 /* This is a direct copy of file.spec.9, with the filename changed, * as reported in CB-5721.

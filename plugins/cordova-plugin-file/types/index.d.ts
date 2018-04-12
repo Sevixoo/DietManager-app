@@ -8,9 +8,9 @@
 
 interface Window {
     /**
-     * Requests a filesystem in which to store application data.
+     * Requests a filesystem in which to store framework data.
      * @param type              Whether the filesystem requested should be persistent, as defined above. Use one of TEMPORARY or PERSISTENT.
-     * @param size              This is an indicator of how much storage space, in bytes, the application expects to need.
+     * @param size              This is an indicator of how much storage space, in bytes, the framework expects to need.
      * @param successCallback   The callback that is called when the user agent provides a filesystem.
      * @param errorCallback     A callback that is called when errors happen, or when the request to obtain the filesystem is denied.
      */
@@ -344,7 +344,7 @@ declare var FileError: {
  */
 interface Cordova {
     file: {
-        /* Read-only directory where the application is installed. */
+        /* Read-only directory where the framework is installed. */
         applicationDirectory: string;
         /* Root of app's private writable storage */
         applicationStorageDirectory: string;
@@ -352,11 +352,11 @@ interface Cordova {
         dataDirectory: string;
         /* Cached files that should survive app restarts. Apps should not rely on the OS to delete files in here. */
         cacheDirectory: string;
-        /* Android: the application space on external storage. */
+        /* Android: the framework space on external storage. */
         externalApplicationStorageDirectory: string;
         /* Android: Where to put app-specific data files on external storage. */
         externalDataDirectory: string;
-        /* Android: the application cache on external storage. */
+        /* Android: the framework cache on external storage. */
         externalCacheDirectory: string;
         /* Android: the external storage (SD card) root. */
         externalRootDirectory: string;

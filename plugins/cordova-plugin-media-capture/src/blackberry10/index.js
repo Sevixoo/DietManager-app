@@ -19,7 +19,7 @@
  *
 */
 
-//cordova-js/lib/common/plugin/CaptureError.js
+//cordova-src/lib/common/plugin/CaptureError.src
 var INTERNAL_ERROR_CODE = 0,
     APPLICATION_BUSY_ERROR_CODE = 1,
     INVALID_ARGUMENT_ERROR_CODE = 2,

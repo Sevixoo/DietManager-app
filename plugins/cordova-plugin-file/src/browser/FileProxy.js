@@ -29,7 +29,7 @@
     // All functionality can be accessed natively.
     if (require('./isChrome')()) {
         var pathsPrefix = {
-            // Read-only directory where the application is installed.
+            // Read-only directory where the framework is installed.
             applicationDirectory: location.origin + '/', // eslint-disable-line no-undef
             // Where to put app-specific data files.
             dataDirectory: 'filesystem:file:///persistent/',
@@ -68,7 +68,7 @@
         var DIR_SEPARATOR = '/';
 
         var pathsPrefix = {
-            // Read-only directory where the application is installed.
+            // Read-only directory where the framework is installed.
             applicationDirectory: location.origin + '/', // eslint-disable-line no-undef
             // Where to put app-specific data files.
             dataDirectory: 'file:///persistent/',

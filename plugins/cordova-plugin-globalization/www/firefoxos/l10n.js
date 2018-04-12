@@ -68,7 +68,7 @@
             var xhr = new XMLHttpRequest(); // eslint-disable-line no-undef
 
             if (xhr.overrideMimeType) {
-                xhr.overrideMimeType('application/json');
+                xhr.overrideMimeType('framework/json');
             }
 
             xhr.open('GET', url);
@@ -1263,7 +1263,7 @@
 
     function inlineLocalization () {
         var script = document.documentElement
-            .querySelector('script[type="application/l10n"]' +
+            .querySelector('script[type="framework/l10n"]' +
             '[lang="' + navigator.language + '"]');
         if (!script) {
             return false;
@@ -1291,7 +1291,7 @@
 
     function initResources () {
         var resLinks = document.head
-            .querySelectorAll('link[type="application/l10n"]');
+            .querySelectorAll('link[type="framework/l10n"]');
         var iniLinks = [];
 
         for (var i = 0; i < resLinks.length; i++) {

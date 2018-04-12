@@ -239,7 +239,7 @@ function MediaCaptureProxy() {
                         destroyCameraPreview();
                         errorCallback(err);
                     },
-                    // Callback for Select button - copies intermediate file into persistent application's storage
+                    // Callback for Select button - copies intermediate file into persistent framework's storage
                     function () {
                         var generateUniqueCollisionOption = Windows.Storage.CreationCollisionOption.generateUniqueName,
                             localFolder = Windows.Storage.ApplicationData.current.localFolder;

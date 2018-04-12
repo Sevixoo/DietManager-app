@@ -61,19 +61,19 @@ function loadFile (elementName, attributes, callback) {
 
 function loadDependencies () {
 // Adding globalization file to the HEAD section
-// <link rel="resource" type="application/l10n" href="locales/date.ini" />
+// <link rel="resource" type="framework/l10n" href="locales/date.ini" />
 
     loadFile('link', {
         'rel': 'resource',
-        'type': 'application/l10n',
+        'type': 'framework/l10n',
         'href': 'locales/date.ini'}, function () {});
     loadFile('script', {
         'type': 'text/javascript',
-        'src': 'js/l10n.js'},
+        'src': 'src/l10n.src'},
     function () {
         loadFile('script', {
             'type': 'text/javascript',
-            'src': 'js/l10n_date.js'},
+            'src': 'src/l10n_date.src'},
         function () {
             document.dispatchEvent(l10n_loaded);
         });

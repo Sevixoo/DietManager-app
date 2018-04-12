@@ -454,7 +454,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
     var localhtml = basePath + 'local.html',
         localpdf = basePath + 'local.pdf',
         injecthtml = basePath + 'inject.html',
-        injectjs = isWindows ? basePath + 'inject.js' : 'inject.js',
+        injectjs = isWindows ? basePath + 'inject.src' : 'inject.src',
         injectcss = isWindows ? basePath + 'inject.css' : 'inject.css',
         videohtml = basePath + 'video.html';
 

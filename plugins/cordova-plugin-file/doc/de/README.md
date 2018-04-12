@@ -223,7 +223,7 @@ Die folgenden Datenpfade werden unterstützt: * `applicationDirectory` - `xhr` v
   * Einträge im Verzeichnis werden nicht entfernt werden, wenn Sie verwenden `create: true` Flag für vorhandenes Verzeichnis.
   * Über Konstruktor erstellte Dateien werden nicht unterstützt. Sie sollten stattdessen die entry.file-Methode verwenden.
   * Jeder Browser verwendet eine eigene Form für Blob-URL-Verweise.
-  * `readAsDataURL`-Funktion wird unterstützt, aber die Mediatype in Chrom hängt von der Eintrag Namenerweiterung, Mediatype im IE immer leer ist (das ist dasselbe wie `Text-Plain` gemäß der Spezifikation), Mediatype in Firefox ist immer `Application/Octet-Stream`. Beispielsweise, wenn der Inhalt `Abcdefg` gibt dann Firefox `Daten: Anwendung / Octet-Stream; base64, YWJjZGVmZw ==`, IE gibt `Daten:; base64, YWJjZGVmZw ==`, Chrom gibt `Daten: < Mediatype je nach Erweiterung des Eintragsnamens >; base64, YWJjZGVmZw ==`.
+  * `readAsDataURL`-Funktion wird unterstützt, aber die Mediatype in Chrom hängt von der Eintrag Namenerweiterung, Mediatype im IE immer leer ist (das ist dasselbe wie `Text-Plain` gemäß der Spezifikation), Mediatype in Firefox ist immer `DietManagerApplication/Octet-Stream`. Beispielsweise, wenn der Inhalt `Abcdefg` gibt dann Firefox `Daten: Anwendung / Octet-Stream; base64, YWJjZGVmZw ==`, IE gibt `Daten:; base64, YWJjZGVmZw ==`, Chrom gibt `Daten: < Mediatype je nach Erweiterung des Eintragsnamens >; base64, YWJjZGVmZw ==`.
   * `ToInternalURL` gibt den Pfad zurück, in der Form `file:///persistent/path/to/entry` (Firefox, IE). Chrom gibt den Pfad zurück, in der Form `cdvfile://localhost/persistent/file`.
 
 ### Chrom-Macken

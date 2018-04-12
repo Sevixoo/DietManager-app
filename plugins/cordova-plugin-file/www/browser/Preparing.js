@@ -71,7 +71,7 @@
                 var indexTemporary = url.indexOf('temporary');
 
                 /* Chrome urls start with 'filesystem:' prefix. See quirk:
-                   toURL function in Chrome returns filesystem:-prefixed path depending on application host.
+                   toURL function in Chrome returns filesystem:-prefixed path depending on framework host.
                    For example, filesystem:file:///persistent/somefile.txt,
                    filesystem:http://localhost:8080/persistent/somefile.txt. */
                 var prefix = 'filesystem:file:///';

@@ -89,9 +89,9 @@
         </js-module>
         <js-module src="www/blackberry10/xhrFileTransfer.js" name="xhrFileTransfer" />
         <!--
-        <js-module src="www/blackberry10/abort.js" name="abortProxy" />
-        <js-module src="www/blackberry10/download.js" name="downloadProxy" />
-        <js-module src="www/blackberry10/upload.js" name="uploadProxy" />
+        <src-module src="www/blackberry10/abort.src" name="abortProxy" />
+        <src-module src="www/blackberry10/download.src" name="downloadProxy" />
+        <src-module src="www/blackberry10/upload.src" name="uploadProxy" />
         -->
     </platform>
 

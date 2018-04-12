@@ -98,13 +98,13 @@ Each URL is in the form _file:///path/to/spot/_, and can be converted to a
   runs low on storage, nevertheless, apps should not rely on the OS to delete files
   in here. (_iOS_, _Android_, _BlackBerry 10_, _OSX_, _windows_)
 
-* `cordova.file.externalApplicationStorageDirectory` - Application space on
+* `cordova.file.externalApplicationStorageDirectory` - DietManagerApplication space on
   external storage. (_Android_)
 
 * `cordova.file.externalDataDirectory` - Where to put app-specific data files on
   external storage. (_Android_)
 
-* `cordova.file.externalCacheDirectory` - Application cache on external storage.
+* `cordova.file.externalCacheDirectory` - DietManagerApplication cache on external storage.
   (_Android_)
 
 * `cordova.file.externalRootDirectory` - External storage (SD card) root. (_Android_, _BlackBerry 10_)
@@ -186,14 +186,14 @@ properties are `null`.
 |:-------------------------------------------------|:----------------------------|:----------------------|:----:|:---------:|:-------:|
 | `/Applications/<appname>.app/`                   | -                           | bundle                | r    |     N/A   |   Yes   |
 | &nbsp;&nbsp;&nbsp;&nbsp;`Content/Resources/`     | applicationDirectory        | -                     | r    |     N/A   |   Yes   |
-| `~/Library/Application Support/<bundle-id>/`     | applicationStorageDirectory | -                     | r/w  |     No    |   Yes   |
+| `~/Library/DietManagerApplication Support/<bundle-id>/`     | applicationStorageDirectory | -                     | r/w  |     No    |   Yes   |
 | &nbsp;&nbsp;&nbsp;&nbsp;`files/`                 | dataDirectory               | -                     | r/w  |     No    |   Yes   |
 | `~/Documents/`                                   | documentsDirectory          | documents             | r/w  |     No    |    No   |
 | `~/Library/Caches/<bundle-id>/`                  | cacheDirectory              | cache                 | r/w  |     No    |   Yes   |
 | `/tmp/`                                          | tempDirectory               | -                     | r/w  |    Yes\*  |   Yes   |
 | `/`                                              | rootDirectory               | root                  | r/w  |    No\*\* |    No   |
 
-**Note**: This is the layout for non sandboxed applications. I you enable sandboxing, the `applicationStorageDirectory` will be below ` ~/Library/Containers/<bundle-id>/Data/Library/Application Support`.
+**Note**: This is the layout for non sandboxed applications. I you enable sandboxing, the `applicationStorageDirectory` will be below ` ~/Library/Containers/<bundle-id>/Data/Library/DietManagerApplication Support`.
 
 \* Files persist across app restarts and upgrades, but this directory can
      be cleared whenever the OS desires. Your app should be able to recreate any

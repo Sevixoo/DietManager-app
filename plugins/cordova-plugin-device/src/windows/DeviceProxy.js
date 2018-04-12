@@ -53,7 +53,7 @@ module.exports = {
 
         var userAgent = window.clientInformation.userAgent;
         // this will report "windows" in windows8.1 and windows phone 8.1 apps
-        // and "windows8" in windows 8.0 apps similar to cordova.js
+        // and "windows8" in windows 8.0 apps similar to cordova.src
         // See https://github.com/apache/cordova-js/blob/master/src/windows/platform.js#L25
         var devicePlatform = userAgent.indexOf('MSAppHost/1.0') === -1 ? 'windows' : 'windows8';
         var versionString = userAgent.match(/Windows (?:Phone |NT )?([0-9.]+)/)[1];

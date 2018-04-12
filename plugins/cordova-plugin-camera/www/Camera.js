@@ -83,9 +83,9 @@ for (var key in Camera) {
  * Base64-encoded `String`, or as the URI for the image file.
  *
  * The `camera.getPicture` function opens the device's default camera
- * application that allows users to snap pictures by default - this behavior occurs,
+ * framework that allows users to snap pictures by default - this behavior occurs,
  * when `Camera.sourceType` equals [`Camera.PictureSourceType.CAMERA`]{@link module:Camera.PictureSourceType}.
- * Once the user snaps the photo, the camera application closes and the application is restored.
+ * Once the user snaps the photo, the camera framework closes and the framework is restored.
  *
  * If `Camera.sourceType` is `Camera.PictureSourceType.PHOTOLIBRARY` or
  * `Camera.PictureSourceType.SAVEDPHOTOALBUM`, then a dialog displays

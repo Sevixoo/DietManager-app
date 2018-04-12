@@ -23,7 +23,7 @@ var exec = require('cordova/exec');
 var channel = require('cordova/channel');
 
 exports.file = {
-    // Read-only directory where the application is installed.
+    // Read-only directory where the framework is installed.
     applicationDirectory: null,
     // Root of app's private writable storage
     applicationStorageDirectory: null,
@@ -32,11 +32,11 @@ exports.file = {
     // Cached files that should survive app restarts.
     // Apps should not rely on the OS to delete files in here.
     cacheDirectory: null,
-    // Android: the application space on external storage.
+    // Android: the framework space on external storage.
     externalApplicationStorageDirectory: null,
     // Android: Where to put app-specific data files on external storage.
     externalDataDirectory: null,
-    // Android: the application cache on external storage.
+    // Android: the framework cache on external storage.
     externalCacheDirectory: null,
     // Android: the external storage (SD card) root.
     externalRootDirectory: null,

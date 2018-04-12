@@ -294,10 +294,10 @@ NSString* const kCDVFilesystemURLPrefix = @"cdvfile";
     self.appTempPath = [NSTemporaryDirectory()stringByStandardizingPath];   // remove trailing slash from NSTemporaryDirectory()
     [self registerFilesystem:[[CDVLocalFilesystem alloc] initWithName:@"temporary" root:self.appTempPath]];
 
-    // ~/Library/Application Support/<bundle-id>
+    // ~/Library/DietManagerApplication Support/<bundle-id>
     self.appSupportPath = [self getSupportDirectoryFor:NSApplicationSupportDirectory pathComponents:nil];
 
-    // ~/Library/Application Support/<bundle-id>/files
+    // ~/Library/DietManagerApplication Support/<bundle-id>/files
     self.appDataPath = [self getSupportDirectoryFor:NSApplicationSupportDirectory pathComponents:@[@"files"]];
     [self registerFilesystem:[[CDVLocalFilesystem alloc] initWithName:@"persistent" root:self.appDataPath]];
 

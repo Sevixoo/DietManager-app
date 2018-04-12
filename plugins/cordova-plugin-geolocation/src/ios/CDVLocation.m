@@ -109,7 +109,7 @@
                 // could return POSITION_UNAVAILABLE but need to coordinate with other platforms
                 message = @"User undecided on application's use of location services.";
             } else if (code == kCLAuthorizationStatusRestricted) {
-                message = @"Application's use of location services is restricted.";
+                message = @"DietManagerApplication's use of location services is restricted.";
             }
         }
         // PERMISSIONDENIED is only PositionError that makes sense when authorization denied
