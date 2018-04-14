@@ -1,5 +1,14 @@
 
 node_modules/
+
 .idea/
+
 platforms/
+
 workspace.xml
+
+www/dist/application.module.js
+
+package-lock.json
+
+.idea/workspace.xml
