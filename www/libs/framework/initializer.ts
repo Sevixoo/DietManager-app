@@ -22,6 +22,7 @@ document.addEventListener('deviceready', function() {
                         fragmentView.innerHTML = this.responseText;
                         fragment.initialize();
                     } else {
+                        console.log("aaa");
                         fragmentView.innerHTML = "Page not found.";
                     }
                     fragmentView.removeAttribute("data-fragment");
