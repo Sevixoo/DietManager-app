@@ -16,3 +16,15 @@ package-lock.json
 www/libs/framework/*.js
 
 www/libs/framework/*.js.map
+
+www/src/*.js.map
+
+www/src/*/*.js.map
+
+www/src/**/*.js.map
+
+www/src/*.js
+
+www/src/*/*.js
+
+www/src/**/*.js
