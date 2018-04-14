@@ -1,6 +1,5 @@
 
 node_modules/
-WWW/dist/
-www/dist/
 .idea/
 platforms/
+workspace.xml
