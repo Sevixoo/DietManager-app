@@ -1,0 +1,29 @@
+{
+  "name": "DietManager-app",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/Sevixoo/DietManager-app/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sevixoo/DietManager-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sevixoo/DietManager-app/issues"
+  },
+  "homepage": "https://github.com/Sevixoo/DietManager-app#readme",
+  "devDependencies": {
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.1",
+    "jquery": "^3.3.1"
+  }
+}
