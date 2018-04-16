@@ -7,13 +7,13 @@ import {Fragment} from "./Fragment";
 let app = new DietManagerApplication();
 app.initialize();
 
-let controller : Controller = routing[document.location.pathname](this);
-document.addEventListener('deviceready', function() {
-    controller.initialize();
+let controller : Controller = routing[document.location.pathname](app);
 
-    $("div[provider-fragment]").get().forEach(fragmentView => {
-        let fragmentName : string = fragmentView.getAttribute("provider-fragment");
-        let fragment : Fragment = fragments[fragmentName](this);
+let onDeviceReady = function() {
+    controller.initialize();
+    $("div[data-fragment]").get().forEach(fragmentView => {
+        let fragmentName : string = fragmentView.getAttribute("data-fragment");
+        let fragment : Fragment = fragments[fragmentName](app);
         let fragmentPath : string = document.location.origin + fragment.getViewName();
         if(fragmentName){
             let xhttp = new XMLHttpRequest();
@@ -34,4 +34,12 @@ document.addEventListener('deviceready', function() {
         }
 
     });
-}, false);
+};
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+/*if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
+    document.addEventListener("deviceready", onDeviceReady, false);
+} else {
+    onDeviceReady();
+}*/

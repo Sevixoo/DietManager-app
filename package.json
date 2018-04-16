@@ -24,7 +24,22 @@
   },
   "dependencies": {
     "@types/jquery": "^3.3.1",
+    "cordova-android": "^7.0.0",
     "cordova-browser": "^5.0.3",
+    "cordova-plugin-console": "^1.0.7",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-splashscreen": "^3.2.2",
     "jquery": "^3.3.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
   }
 }
