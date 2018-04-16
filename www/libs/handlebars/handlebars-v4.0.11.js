@@ -3669,7 +3669,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (asObject) {
 	        this.decorators = Function.apply(this, ['fn', 'props', 'container', 'depth0', 'data', 'blockParams', 'depths', this.decorators.merge()]);
 	      } else {
-	        this.decorators.prepend('function(fn, props, container, depth0, data, blockParams, depths) {\n');
+	        this.decorators.prepend('function(fn, props, container, depth0, provider, blockParams, depths) {\n');
 	        this.decorators.push('}\n');
 	        this.decorators = this.decorators.merge();
 	      }
@@ -4002,14 +4002,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	  // [lookupData]
 	  //
 	  // On stack, before: ...
-	  // On stack, after: data, ...
+	  // On stack, after: provider, ...
 	  //
-	  // Push the data lookup operator
+	  // Push the provider lookup operator
 	  lookupData: function lookupData(depth, parts, strict) {
 	    if (!depth) {
 	      this.pushStackLiteral('data');
 	    } else {
-	      this.pushStackLiteral('container.data(data, ' + depth + ')');
+	      this.pushStackLiteral('container.provider(provider, ' + depth + ')');
 	    }
 
 	    this.resolvePath('data', parts, 0, true, strict);

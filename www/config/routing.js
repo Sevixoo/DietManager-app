@@ -18,9 +18,17 @@ exports.routing = {
     "/view/main/main.html": function (app) { return new MainController_1.MainController(); }
 };
 exports.fragments = {
-    "main_tab1_fragment": function (app) { return new DashboardTabFragment_1.DashboardTabFragment("/view/main/dashboard/dashboard.html"); },
-    "main_tab2_fragment": function (app) { return new DietTabFragment_1.DietTabFragment("/view/main/diet/diet.html"); },
-    "main_tab3_fragment": function (app) { return new StatsTabFragment_1.StatsTabFragment("/view/main/stats/stats.html"); },
-    "main_tab4_fragment": function (app) { return new ProfileTabFragment_1.ProfileTabFragment("/view/main/profile/profile.html"); }
+    "main_tab1_fragment": function (app) {
+        return new DashboardTabFragment_1.DashboardTabFragment("/view/main/dashboard/dashboard.html");
+    },
+    "main_tab2_fragment": function (app) {
+        return new DietTabFragment_1.DietTabFragment("/view/main/diet/diet.html");
+    },
+    "main_tab3_fragment": function (app) {
+        return new StatsTabFragment_1.StatsTabFragment("/view/main/stats/stats.html");
+    },
+    "main_tab4_fragment": function (app) {
+        return new ProfileTabFragment_1.ProfileTabFragment("/view/main/profile/profile.html", app.provideProfileRepository(), app.provideAccountManager());
+    }
 };
 //# sourceMappingURL=routing.js.map

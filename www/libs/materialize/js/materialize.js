@@ -1638,7 +1638,7 @@ if (Vel) {
       var isFocused = false;
 
       // Dropdown menu
-      var activates = $("#" + origin.attr('data-activates'));
+      var activates = $("#" + origin.attr('provider-activates'));
 
       function updateOptions() {
         if (origin.data('induration') !== undefined) curr_options.inDuration = origin.data('induration');
@@ -1666,7 +1666,7 @@ if (Vel) {
           isFocused = true;
         }
 
-        // Check html data attributes
+        // Check html provider attributes
         updateOptions();
 
         // Set Dropdown state
@@ -1996,7 +1996,7 @@ if (Vel) {
           if (modalId) {
             modalId = modalId.slice(1);
           } else {
-            modalId = $trigger[0].getAttribute('data-target');
+            modalId = $trigger[0].getAttribute('provider-target');
           }
           var modalInstance = document.getElementById(modalId).M_Modal;
           if (modalInstance) {
@@ -2822,8 +2822,8 @@ if (Vel) {
     // Remove tooltip from the activator
     if (options === "remove") {
       this.each(function () {
-        $('#' + $(this).attr('data-tooltip-id')).remove();
-        $(this).removeAttr('data-tooltip-id');
+        $('#' + $(this).attr('provider-tooltip-id')).remove();
+        $(this).removeAttr('provider-tooltip-id');
         $(this).off('mouseenter.tooltip mouseleave.tooltip');
       });
       return false;
@@ -2836,21 +2836,21 @@ if (Vel) {
       var origin = $(this);
 
       // Destroy old tooltip
-      if (origin.attr('data-tooltip-id')) {
-        $('#' + origin.attr('data-tooltip-id')).remove();
+      if (origin.attr('provider-tooltip-id')) {
+        $('#' + origin.attr('provider-tooltip-id')).remove();
       }
 
-      origin.attr('data-tooltip-id', tooltipId);
+      origin.attr('provider-tooltip-id', tooltipId);
 
       // Get attributes.
       var allowHtml, tooltipDelay, tooltipPosition, tooltipText, tooltipEl, backdrop;
       var setAttributes = function () {
-        allowHtml = origin.attr('data-html') ? origin.attr('data-html') === 'true' : options.html;
-        tooltipDelay = origin.attr('data-delay');
+        allowHtml = origin.attr('provider-html') ? origin.attr('provider-html') === 'true' : options.html;
+        tooltipDelay = origin.attr('provider-delay');
         tooltipDelay = tooltipDelay === undefined || tooltipDelay === '' ? options.delay : tooltipDelay;
-        tooltipPosition = origin.attr('data-position');
+        tooltipPosition = origin.attr('provider-position');
         tooltipPosition = tooltipPosition === undefined || tooltipPosition === '' ? options.position : tooltipPosition;
-        tooltipText = origin.attr('data-tooltip');
+        tooltipText = origin.attr('provider-tooltip');
         tooltipText = tooltipText === undefined || tooltipText === '' ? options.tooltip : tooltipText;
       };
       setAttributes();
@@ -3118,11 +3118,11 @@ if (Vel) {
         relativeX = e.touches[0].pageX - pos.left;
       }
 
-      // Attach data to element
-      ripple.setAttribute('data-hold', Date.now());
-      ripple.setAttribute('data-scale', scale);
-      ripple.setAttribute('data-x', relativeX);
-      ripple.setAttribute('data-y', relativeY);
+      // Attach provider to element
+      ripple.setAttribute('provider-hold', Date.now());
+      ripple.setAttribute('provider-scale', scale);
+      ripple.setAttribute('provider-x', relativeX);
+      ripple.setAttribute('provider-y', relativeY);
 
       // Set ripple position
       var rippleStyle = {
@@ -3170,12 +3170,12 @@ if (Vel) {
         return false;
       }
 
-      var relativeX = ripple.getAttribute('data-x');
-      var relativeY = ripple.getAttribute('data-y');
-      var scale = ripple.getAttribute('data-scale');
+      var relativeX = ripple.getAttribute('provider-x');
+      var relativeY = ripple.getAttribute('provider-y');
+      var scale = ripple.getAttribute('provider-scale');
 
       // Get delay beetween mousedown and mouse leave
-      var diff = Date.now() - Number(ripple.getAttribute('data-hold'));
+      var diff = Date.now() - Number(ripple.getAttribute('provider-hold'));
       var delay = 350 - diff;
 
       if (delay < 0) {
@@ -3732,7 +3732,7 @@ if (Vel) {
 
       $(this).each(function () {
         var $this = $(this);
-        var menuId = $this.attr('data-activates');
+        var menuId = $this.attr('provider-activates');
         var menu = $("#" + menuId);
 
         // Set to width
@@ -3741,14 +3741,14 @@ if (Vel) {
         }
 
         // Add Touch Area
-        var $dragTarget = $('.drag-target[data-sidenav="' + menuId + '"]');
+        var $dragTarget = $('.drag-target[provider-sidenav="' + menuId + '"]');
         if (options.draggable) {
           // Regenerate dragTarget
           if ($dragTarget.length) {
             $dragTarget.remove();
           }
 
-          $dragTarget = $('<div class="drag-target"></div>').attr('data-sidenav', menuId);
+          $dragTarget = $('<div class="drag-target"></div>').attr('provider-sidenav', menuId);
           $('body').append($dragTarget);
         } else {
           $dragTarget = $();
@@ -4086,7 +4086,7 @@ if (Vel) {
     },
     destroy: function () {
       var $overlay = $('#sidenav-overlay');
-      var $dragTarget = $('.drag-target[data-sidenav="' + $(this).attr('data-activates') + '"]');
+      var $dragTarget = $('.drag-target[provider-sidenav="' + $(this).attr('provider-activates') + '"]');
       $overlay.trigger('click');
       $dragTarget.remove();
       $(this).off('click');
@@ -4413,8 +4413,8 @@ if (Vel) {
     });
 
     window.validate_field = function (object) {
-      var hasLength = object.attr('data-length') !== undefined;
-      var lenAttr = parseInt(object.attr('data-length'));
+      var hasLength = object.attr('provider-length') !== undefined;
+      var lenAttr = parseInt(object.attr('provider-length'));
       var len = object.val().length;
 
       if (object.val().length === 0 && object[0].validity.badInput === false && !object.is(':required')) {
@@ -4668,7 +4668,7 @@ if (Vel) {
             oldVal,
             $inputDiv = $input.closest('.input-field'); // Div to append on
 
-        // Check if data isn't empty
+        // Check if provider isn't empty
         if (!$.isEmptyObject(data)) {
           var $autocomplete = $('<ul class="autocomplete-content dropdown-content"></ul>');
           var $oldAutocomplete;
@@ -4812,7 +4812,7 @@ if (Vel) {
             }
           });
 
-          // Empty data
+          // Empty provider
         } else {
           $input.off('keyup.autocomplete focus.autocomplete');
         }
@@ -4832,7 +4832,7 @@ if (Vel) {
       }
 
       var multiple = $select.attr('multiple') ? true : false,
-          lastID = $select.attr('data-select-id'); // Tear down structure if Select needs to be rebuilt
+          lastID = $select.attr('provider-select-id'); // Tear down structure if Select needs to be rebuilt
 
       if (lastID) {
         $select.parent().find('span.caret').remove();
@@ -4844,13 +4844,13 @@ if (Vel) {
 
       // If destroying the select, remove the selelct-id and reset it to it's uninitialized state.
       if (callback === 'destroy') {
-        $select.removeAttr('data-select-id').removeClass('initialized');
+        $select.removeAttr('provider-select-id').removeClass('initialized');
         $(window).off('click.select');
         return;
       }
 
       var uniqueID = Materialize.guid();
-      $select.attr('data-select-id', uniqueID);
+      $select.attr('provider-select-id', uniqueID);
       var wrapper = $('<div class="select-wrapper"></div>');
       wrapper.addClass($select.attr('class'));
       if ($select.is(':disabled')) wrapper.addClass('disabled');
@@ -4944,7 +4944,7 @@ if (Vel) {
       // escape double quotes
       var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
 
-      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + ($select.is(':disabled') ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID + '" value="' + sanitizedLabelHtml + '"/>');
+      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + ($select.is(':disabled') ? 'disabled' : '') + ' provider-activates="select-options-' + uniqueID + '" value="' + sanitizedLabelHtml + '"/>');
       $select.before($newSelect);
       $newSelect.before(dropdownIcon);
 
@@ -5238,7 +5238,7 @@ if (Vel) {
 
         // Move img src into background-image
         $slides.find('img').each(function () {
-          var placeholderBase64 = 'data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+          var placeholderBase64 = 'provider:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
           if ($(this).attr('src') !== placeholderBase64) {
             $(this).css('background-image', 'url("' + $(this).attr('src') + '")');
             $(this).attr('src', placeholderBase64);
@@ -5482,7 +5482,7 @@ if (Vel) {
     // Handle removal of static chips.
     $(document).on('click', '.chip .close', function (e) {
       var $chips = $(this).closest('.chips');
-      if ($chips.attr('data-initialized')) {
+      if ($chips.attr('provider-initialized')) {
         return;
       }
       $(this).closest('.chip').remove();
@@ -5521,8 +5521,8 @@ if (Vel) {
           curr_options.data = [];
         }
         $chips.data('chips', curr_options.data);
-        $chips.attr('data-index', i);
-        $chips.attr('data-initialized', true);
+        $chips.attr('provider-index', i);
+        $chips.attr('provider-initialized', true);
 
         if (!$chips.hasClass(self.SELS.CHIPS)) {
           $chips.addClass('chips');
@@ -5950,7 +5950,7 @@ if (Vel) {
    * @param  {Object}  object jQuery object
    */
   var FABtoToolbar = function (btn) {
-    if (btn.attr('data-open') === "true") {
+    if (btn.attr('provider-open') === "true") {
       return;
     }
 
@@ -5967,13 +5967,13 @@ if (Vel) {
     offsetX = btnRect.left - windowWidth / 2 + btnRect.width / 2;
     offsetY = windowHeight - btnRect.bottom;
     scaleFactor = windowWidth / backdrop.width();
-    btn.attr('data-origin-bottom', btnRect.bottom);
-    btn.attr('data-origin-left', btnRect.left);
-    btn.attr('data-origin-width', btnRect.width);
+    btn.attr('provider-origin-bottom', btnRect.bottom);
+    btn.attr('provider-origin-left', btnRect.left);
+    btn.attr('provider-origin-width', btnRect.width);
 
     // Set initial state
     btn.addClass('active');
-    btn.attr('data-open', true);
+    btn.attr('provider-open', true);
     btn.css({
       'text-align': 'center',
       width: '100%',
@@ -6037,16 +6037,16 @@ if (Vel) {
    * @param  {Object}  object jQuery object
    */
   var toolbarToFAB = function (btn) {
-    if (btn.attr('data-open') !== "true") {
+    if (btn.attr('provider-open') !== "true") {
       return;
     }
 
     var offsetX, offsetY, scaleFactor;
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
-    var btnWidth = btn.attr('data-origin-width');
-    var btnBottom = btn.attr('data-origin-bottom');
-    var btnLeft = btn.attr('data-origin-left');
+    var btnWidth = btn.attr('provider-origin-width');
+    var btnBottom = btn.attr('provider-origin-bottom');
+    var btnLeft = btn.attr('provider-origin-left');
     var anchor = btn.find('> .btn-floating').first();
     var menu = btn.find('> ul').first();
     var backdrop = btn.find('.fab-backdrop');
@@ -6058,7 +6058,7 @@ if (Vel) {
 
     // Hide backdrop
     btn.removeClass('active');
-    btn.attr('data-open', false);
+    btn.attr('provider-open', false);
     btn.css({
       'background-color': 'transparent',
       transition: 'none'
@@ -6478,7 +6478,7 @@ if (Vel) {
         // Remove the root.
         P.$root.remove();
 
-        // Remove the input class, remove the stored data, and unbind
+        // Remove the input class, remove the stored provider, and unbind
         // the events (after a tick for IE - see `P.close`).
         $ELEMENT.removeClass(CLASSES.input).removeData(NAME);
         setTimeout(function () {
@@ -6865,7 +6865,7 @@ if (Vel) {
 
       $ELEMENT.
 
-      // Store the picker data by component name.
+      // Store the picker provider by component name.
       data(NAME, P).
 
       // Add the “input” class name.
@@ -6874,7 +6874,7 @@ if (Vel) {
       // Remove the tabindex.
       attr('tabindex', -1).
 
-      // If there’s a `data-value`, update the value of the element.
+      // If there’s a `provider-value`, update the value of the element.
       val($ELEMENT.data('value') ? P.get('select', SETTINGS.format) : ELEMENT.value);
 
       // Only bind keydown events if the element isn’t editable.
@@ -6959,7 +6959,7 @@ if (Vel) {
       on('focus.toOpen', handleFocusToOpenEvent).
 
       // If there’s a click on an actionable element, carry out the actions.
-      on('click', '[data-pick], [data-nav], [data-clear], [data-close]', function () {
+      on('click', '[provider-pick], [provider-nav], [provider-clear], [provider-close]', function () {
 
         var $target = $(this),
             targetData = $target.data(),
@@ -7287,15 +7287,15 @@ if (Vel) {
     // Extend jQuery.
     $.fn[name] = function (options, action) {
 
-      // Grab the component data.
+      // Grab the component provider.
       var componentData = this.data(name);
 
-      // If the picker is requested, return the data object.
+      // If the picker is requested, return the provider object.
       if (options == 'picker') {
         return componentData;
       }
 
-      // If the component data exists and `options` is a string, carry out the action.
+      // If the component provider exists and `options` is a string, carry out the action.
       if (componentData && typeof options == 'string') {
         return PickerConstructor._.trigger(componentData[options], componentData, [action]);
       }
@@ -8281,7 +8281,7 @@ if (Vel) {
       return _.node('div', ' ', settings.klass['nav' + (next ? 'Next' : 'Prev')] + (
 
       // If the focused month is outside the range, disabled the button.
-      next && viewsetObject.year >= maxLimitObject.year && viewsetObject.month >= maxLimitObject.month || !next && viewsetObject.year <= minLimitObject.year && viewsetObject.month <= minLimitObject.month ? ' ' + settings.klass.navDisabled : ''), 'data-nav=' + (next || -1) + ' ' + _.ariaAttr({
+      next && viewsetObject.year >= maxLimitObject.year && viewsetObject.month >= maxLimitObject.month || !next && viewsetObject.year <= minLimitObject.year && viewsetObject.month <= minLimitObject.month ? ' ' + settings.klass.navDisabled : ''), 'provider-nav=' + (next || -1) + ' ' + _.ariaAttr({
         role: 'button',
         controls: calendar.$node[0].id + '_table'
       }) + ' ' + 'title="' + (next ? settings.labelMonthNext : settings.labelMonthPrev) + '"'); //endreturn
@@ -8474,7 +8474,7 @@ if (Vel) {
               }
 
               return klasses.join(' ');
-            }([settings.klass.day]), 'data-pick=' + targetDate.pick + ' ' + _.ariaAttr({
+            }([settings.klass.day]), 'provider-pick=' + targetDate.pick + ' ' + _.ariaAttr({
               role: 'gridcell',
               label: formattedDate,
               selected: isSelected && calendar.$node.val() === formattedDate ? true : null,
@@ -8493,7 +8493,7 @@ if (Vel) {
     +
 
     // * For Firefox forms to submit, make sure to set the buttons’ `type` attributes as “button”.
-    _.node('div', _.node('button', settings.today, "btn-flat picker__today waves-effect", 'type=button data-pick=' + nowObject.pick + (isOpen && !calendar.disabled(nowObject) ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })) + _.node('button', settings.clear, "btn-flat picker__clear waves-effect", 'type=button data-clear=1' + (isOpen ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })) + _.node('button', settings.close, "btn-flat picker__close waves-effect", 'type=button data-close=true ' + (isOpen ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })), settings.klass.footer), 'picker__container__wrapper'); //endreturn
+    _.node('div', _.node('button', settings.today, "btn-flat picker__today waves-effect", 'type=button provider-pick=' + nowObject.pick + (isOpen && !calendar.disabled(nowObject) ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })) + _.node('button', settings.clear, "btn-flat picker__clear waves-effect", 'type=button provider-clear=1' + (isOpen ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })) + _.node('button', settings.close, "btn-flat picker__close waves-effect", 'type=button provider-close=true ' + (isOpen ? '' : ' disabled') + ' ' + _.ariaAttr({ controls: calendar.$node[0].id })), settings.klass.footer), 'picker__container__wrapper'); //endreturn
   }; //DatePicker.prototype.nodes
 
 
@@ -9240,7 +9240,7 @@ if (Vel) {
         return;
       }
 
-      var itHasLengthAttribute = $input.attr('data-length') !== undefined;
+      var itHasLengthAttribute = $input.attr('provider-length') !== undefined;
 
       if (itHasLengthAttribute) {
         $input.on('input', updateCounter);
@@ -9253,7 +9253,7 @@ if (Vel) {
   };
 
   function updateCounter() {
-    var maxLength = +$(this).attr('data-length'),
+    var maxLength = +$(this).attr('provider-length'),
         actualLength = +$(this).val().length,
         isValidLength = actualLength <= maxLength;
 
@@ -9320,10 +9320,10 @@ if (Vel) {
         // Initialize
         var view = $(this);
         var hasMultipleSlides = view.find('.carousel-item').length > 1;
-        var showIndicators = (view.attr('data-indicators') || options.indicators) && hasMultipleSlides;
-        var noWrap = view.attr('data-no-wrap') || options.noWrap || !hasMultipleSlides;
-        var uniqueNamespace = view.attr('data-namespace') || namespace + i;
-        view.attr('data-namespace', uniqueNamespace);
+        var showIndicators = (view.attr('provider-indicators') || options.indicators) && hasMultipleSlides;
+        var noWrap = view.attr('provider-no-wrap') || options.noWrap || !hasMultipleSlides;
+        var uniqueNamespace = view.attr('provider-namespace') || namespace + i;
+        view.attr('provider-namespace', uniqueNamespace);
 
         // Options
         var setCarouselHeight = function (imageOnly) {
@@ -9809,8 +9809,8 @@ if (Vel) {
       $(this).trigger('carouselSet', [n, callback]);
     },
     destroy: function () {
-      var uniqueNamespace = $(this).attr('data-namespace');
-      $(this).removeAttr('data-namespace');
+      var uniqueNamespace = $(this).attr('provider-namespace');
+      $(this).removeAttr('provider-namespace');
       $(this).removeClass('initialized');
       $(this).find('.indicators').remove();
 
@@ -9840,7 +9840,7 @@ if (Vel) {
   var methods = {
     init: function (options) {
       return this.each(function () {
-        var origin = $('#' + $(this).attr('data-activates'));
+        var origin = $('#' + $(this).attr('provider-activates'));
         var screen = $('body');
 
         // Creating tap target

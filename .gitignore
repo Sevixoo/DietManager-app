@@ -5,6 +5,8 @@ node_modules/
 
 platforms/
 
+plugins/
+
 workspace.xml
 
 www/dist/application.module.js

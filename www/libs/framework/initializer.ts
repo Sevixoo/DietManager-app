@@ -5,13 +5,14 @@ import * as $ from 'jquery';
 import {Fragment} from "./Fragment";
 
 let app = new DietManagerApplication();
+app.initialize();
 
 let controller : Controller = routing[document.location.pathname](this);
 document.addEventListener('deviceready', function() {
     controller.initialize();
 
-    $("div[data-fragment]").get().forEach(fragmentView => {
-        let fragmentName : string = fragmentView.getAttribute("data-fragment");
+    $("div[provider-fragment]").get().forEach(fragmentView => {
+        let fragmentName : string = fragmentView.getAttribute("provider-fragment");
         let fragment : Fragment = fragments[fragmentName](this);
         let fragmentPath : string = document.location.origin + fragment.getViewName();
         if(fragmentName){
@@ -22,10 +23,9 @@ document.addEventListener('deviceready', function() {
                         fragmentView.innerHTML = this.responseText;
                         fragment.initialize();
                     } else {
-                        console.log("asdsad");
                         fragmentView.innerHTML = "Page not found.";
                     }
-                    fragmentView.removeAttribute("data-fragment");
+                    fragmentView.removeAttribute("provider-fragment");
                 }
             }
 

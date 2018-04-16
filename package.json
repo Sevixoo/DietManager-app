@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@types/jquery": "^3.3.1",
+    "cordova-browser": "^5.0.3",
     "jquery": "^3.3.1"
   }
 }
