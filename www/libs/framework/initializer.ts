@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import {DietManagerApplication} from "../../src/DietManagerApplication"
 import {fragments, routing} from "../../config/routing";
 import {Controller} from "./Controller";
