@@ -4,6 +4,7 @@ import {DataBaseModule} from "./provider/database/DataBaseModule";
 import {LocalModule} from "./provider/local/LocalModule";
 import {AccountModule} from "./provider/account/AccountModule";
 import {AccountManager} from "./provider/account/AccountManager";
+import Database = SQLitePlugin.Database;
 
 export class DietManagerApplication extends Application{
 
@@ -12,10 +13,13 @@ export class DietManagerApplication extends Application{
     private accountModule : AccountModule;
 
     public initialize() : void{
-        this.dataBaseModule = new DataBaseModule();
         this.storageModule = new LocalModule();
         this.accountModule = new AccountModule();
     };
+
+    public onDatabaseConnected(conn : Database){
+        this.dataBaseModule = new DataBaseModule(conn);
+    }
 
     public provideProfileRepository() : ProfileRepository{
         return new ProfileRepository(
