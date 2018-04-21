@@ -39,4 +39,5 @@ export let fragments = {
             app.provideAccountManager()
         );
     }
+
 }
